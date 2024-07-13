@@ -195,7 +195,7 @@ export default function Home() {
             <CardContent>
               This was a program that I built that would allow the user to train their mental math skills. This was so me and my friend could race each other and see who could solve the most problems in a minute. (I won)
             </CardContent>
-            <CardFooter>Python and Flask</CardFooter>
+            <CardFooter>Python</CardFooter>
           </Card>
           <Card>
             <CardHeader>
