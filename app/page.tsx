@@ -44,8 +44,8 @@ export default function Home() {
               },
             }}
           >
-            <h1 className="font-size" style={{ fontSize: "30px" }}>
-              Hey! I&apos;m Thomas.
+            <h1 className="font-size" style={{ fontSize: "30px", textShadow: "1px 1px 10px white"}}>
+              I&apos;m Thomas.
             </h1>
           </motion.div>
         </div>
@@ -100,7 +100,7 @@ export default function Home() {
               },
             }}
           >
-            <h1 className="font-size" style={{ fontSize: "10px" }}>
+            <h1 className="font-size" style={{ fontSize: "10px"}}>
               hint: scroll down
             </h1>
           </motion.div>
@@ -148,18 +148,19 @@ export default function Home() {
                   width={30}
                   height={30}
                 />
-                <Button
+                {/*Remove this When Ready */}
+                {/* <Button
                   variant="outline"
                   onClick={() =>
                     toast({
                       title: "Link Unavailable",
                       description:
-                        "Unfortunately, this project is no longer viewable as I currently don&apos;t have access to it.",
+                        "Unfortunately, this project is no longer viewable as I currently don't have access to it.",
                     })
                   }
                 >
                   <p>Check it out!</p>
-                </Button>
+                </Button> */}
               </div>
               <br></br>
               <CardTitle>youlearn-classmate</CardTitle>
@@ -181,6 +182,23 @@ export default function Home() {
           </Card>
           <Card>
             <CardHeader>
+              <Image
+                src={PythonLogo}
+                alt="react-logo"
+                width={30}
+                height={30}
+              />
+              <br></br>
+              <CardTitle>math off</CardTitle>
+              <CardDescription>June 2024</CardDescription>
+            </CardHeader>
+            <CardContent>
+              This was a program that I built that would allow the user to train their mental math skills. This was so me and my friend could race each other and see who could solve the most problems in a minute. (I won)
+            </CardContent>
+            <CardFooter>Python and Flask</CardFooter>
+          </Card>
+          <Card>
+            <CardHeader>
               <div className="flex justify-between items-center">
                 <Image
                   src={ReactIcon}
@@ -189,13 +207,10 @@ export default function Home() {
                   objectFit="contain"
                   height={30}
                 />
-                <Button variant="outline">
-                  <Link href="https://stacsv.org">Check it out!</Link>
-                </Button>
               </div>
               <br></br>
               <CardTitle>stacsv.org</CardTitle>
-              <CardDescription>Summer 2024</CardDescription>
+              <CardDescription>Summer 2024 (Jun - Aug)</CardDescription>
             </CardHeader>
             <CardContent>
               <p>
@@ -212,20 +227,28 @@ export default function Home() {
           </Card>
           <Card>
             <CardHeader>
-              <Image
-                src={PythonLogo}
-                alt="react-logo"
-                width={30}
-                height={30}
-              />
+              <div className="flex justify-between items-center">
+                <Image
+                  src={ReactIcon}
+                  alt="react-logo"
+                  width={30}
+                  objectFit="contain"
+                  height={30}
+                />  
+              </div>
               <br></br>
-              <CardTitle>math off</CardTitle>
-              <CardDescription>June 2024</CardDescription>
+              <CardTitle>tomski.work</CardTitle>
+              <CardDescription>July 2024</CardDescription>
             </CardHeader>
             <CardContent>
-              This was a program that I built that would allow the user to train their mental math skills. This was so me and my friend could race each other and see who could solve the most problems in a minute. (I won)
+              <p>
+                This is the current website you are using and was really fun to make. 
+                While it is very simple that is what I like about it.
+              </p>
             </CardContent>
-            <CardFooter>Python and Flask</CardFooter>
+            <CardFooter>
+              <p>Next.JS, ShadCN, TypeScript, and CSS</p>
+            </CardFooter>
           </Card>
           <Card>
             <CardHeader>
@@ -253,7 +276,7 @@ export default function Home() {
                 height={30}
               />
               <br></br>
-              <a href="https://stacsv.org"><CardTitle>L.O.R (unfinished)</CardTitle></a>
+              <CardTitle>L.O.R (unfinished)</CardTitle>
               <CardDescription>June 2024 - Current</CardDescription>
             </CardHeader>
             <CardContent>
