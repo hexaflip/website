@@ -195,36 +195,39 @@ export default function Home() {
             <CardContent>
               This was a program that I built that would allow the user to train their mental math skills. This was so me and my friend could race each other and see who could solve the most problems in a minute. (I won)
             </CardContent>
-            <CardFooter>Python</CardFooter>
+            <CardFooter>Python and Flask</CardFooter>
           </Card>
           <Card>
             <CardHeader>
-              <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center">
                 <Image
                   src={ReactIcon}
                   alt="react-logo"
                   width={30}
-                  objectFit="contain"
                   height={30}
                 />
+                <Button variant="outline">
+                  <Link href="https://www.stacsv.org">
+                    Check it out!
+                  </Link>
+                </Button>
               </div>
               <br></br>
+              
               <CardTitle>stacsv.org</CardTitle>
               <CardDescription>Summer 2024 (Jun - Aug)</CardDescription>
             </CardHeader>
             <CardContent>
               <p>
                 This is a website I built for a non-profit 501c3 that let me
-                have the opportunity to learn. I built multiple pages including
-                the landing page, and a working form to let people contact STAC.
-                I also built a way for easy maintenance by linking a backend
-                system to help update the website
+                have the opportunity to learn. I 
               </p>
             </CardContent>
             <CardFooter>
               <p>Next.JS, TypeScript, and CSS</p>
             </CardFooter>
           </Card>
+
           <Card>
             <CardHeader>
               <div className="flex justify-between items-center">
