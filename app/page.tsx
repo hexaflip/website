@@ -182,20 +182,27 @@ export default function Home() {
           </Card>
           <Card>
             <CardHeader>
-              <Image
-                src={PythonLogo}
-                alt="react-logo"
-                width={30}
-                height={30}
-              />
-              <br></br>
-              <CardTitle>math off</CardTitle>
-              <CardDescription>June 2024</CardDescription>
+            <div className="flex justify-between items-center">
+                <Image
+                  src={PythonLogo}
+                  alt="react-logo"
+                  width={30}
+                  height={30}
+                />
+                <Button variant="outline">
+                  <Link href="https://mathoff.streamlit.app/">
+                    Check it out!
+                  </Link>
+                </Button>
+              </div>
+              <CardTitle>Math Off</CardTitle>
+              <CardDescription>June 2024 - Current</CardDescription>
             </CardHeader>
             <CardContent>
-              This was a program that I built that would allow the user to train their mental math skills. This was so me and my friend could race each other and see who could solve the most problems in a minute. (I won)
+              This is a program that I am building to focus on object orientated programming. I wanted to use good techniques to further my knowledge of Python.
+              I am making this to help anyone to become better at mental math. I want to implement graphs and a leveling system to add increasing difficulty in the future.
             </CardContent>
-            <CardFooter>Python and Flask</CardFooter>
+            <CardFooter>Python, Numpy, Matplotlib ,and Streamlit</CardFooter>
           </Card>
           <Card>
             <CardHeader>
@@ -215,12 +222,12 @@ export default function Home() {
               <br></br>
               
               <CardTitle>stacsv.org</CardTitle>
-              <CardDescription>Summer 2024 (Jun - Aug)</CardDescription>
+              <CardDescription>Summer 2024 (Jun - Aug) <br></br>(internship)</CardDescription>
             </CardHeader>
             <CardContent>
               <p>
-                This is a website I built for a non-profit 501c3 that let me
-                have the opportunity to learn. I 
+                This is a website I built for a non-profit 501c3 that generousley gave me
+                the opportunity to learn. I learned a lot about front-end design and also more about typescript and css.
               </p>
             </CardContent>
             <CardFooter>
